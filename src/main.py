@@ -1,15 +1,9 @@
-#!/usr/bin/env python3
-
 from textnode import TextNode, TextType
 
 
 def main():
-    print("hello world")
-
-    node = TextNode("This is some anchor text",
-                    TextType.LINK, "https://www.boot.dev")
+    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
     print(node)
 
 
-if __name__ == "__main__":
-    main()
+main()
