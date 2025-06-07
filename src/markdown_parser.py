@@ -1,4 +1,5 @@
 from textnode import TextNode, TextType
+import re
 
 
 def split_nodes_delimiter(old_nodes, delimiter, text_type):
@@ -32,16 +33,64 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
             raise ValueError(f"Invalid markdown, {delimiter} delimiter not closed")
         
         # Process the parts
+        temp_nodes = []
         for i, part in enumerate(parts):
-            if part == "":
-                # Skip empty parts (happens when delimiter is at start/end)
-                continue
-                
             if i % 2 == 0:
                 # Even indices are regular text (outside delimiters)
-                new_nodes.append(TextNode(part, TextType.TEXT))
+                if part != "":  # Only add non-empty text nodes
+                    temp_nodes.append(TextNode(part, TextType.TEXT))
             else:
                 # Odd indices are delimited text (inside delimiters)
-                new_nodes.append(TextNode(part, text_type))
+                if part != "":  # Only add non-empty delimited nodes
+                    temp_nodes.append(TextNode(part, text_type))
+                # If delimited content is empty, we skip it (effectively removes the empty delimiter)
+        
+        # Merge adjacent TEXT nodes (this handles empty delimiter cases)
+        if not temp_nodes:
+            continue
+            
+        merged_nodes = [temp_nodes[0]]
+        for node in temp_nodes[1:]:
+            if (node.text_type == TextType.TEXT and 
+                merged_nodes[-1].text_type == TextType.TEXT):
+                # Merge with previous TEXT node
+                merged_nodes[-1] = TextNode(
+                    merged_nodes[-1].text + node.text, 
+                    TextType.TEXT
+                )
+            else:
+                merged_nodes.append(node)
+        
+        new_nodes.extend(merged_nodes)
     
     return new_nodes
+
+
+def extract_markdown_images(text):
+    """
+    Extract markdown images from text.
+    
+    Args:
+        text: String containing markdown text
+        
+    Returns:
+        List of tuples containing (alt_text, url) for each image found
+    """
+    pattern = r"!\[([^\[\]]*)\]\(([^\(\)]*)\)"
+    matches = re.findall(pattern, text)
+    return matches
+
+
+def extract_markdown_links(text):
+    """
+    Extract markdown links from text.
+    
+    Args:
+        text: String containing markdown text
+        
+    Returns:
+        List of tuples containing (anchor_text, url) for each link found
+    """
+    pattern = r"(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)"
+    matches = re.findall(pattern, text)
+    return matches
