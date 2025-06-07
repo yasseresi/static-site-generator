@@ -1,60 +1,57 @@
-# Tom Bombadil: The Enigmatic Master
+# Why Tom Bombadil Was a Mistake
 
-Tom Bombadil is perhaps the most mysterious character in all of Tolkien's works. Neither the Ring nor any evil power seems to have dominion over him, making him a unique figure in Middle-earth.
+[< Back Home](/)
 
-## Who is Tom Bombadil?
+![Tom Bombadil image](/images/tom.png)
 
-Tom Bombadil is described as the **"Master"** - but master of what, exactly? He claims to be:
+> "Old Tom Bombadil is a merry fellow; bright blue his jacket is, and his boots are yellow. Alas, his merry song may not belong in this plot's prolonged confluence."
 
-- Eldest of all beings
-- **Master of wood, water, and hill**
-- Immune to the power of the One Ring
+In the vast and intricate weave of J.R.R. Tolkien's legendarium, amidst heroes of renown and tales of high adventure, there exists a curious anomaly: Tom Bombadil. This peculiar figure, whimsical and unfettered by the weight of Middle-earth's burdens, has long been a point of contention among scholars and enthusiasts. While his character exudes charm and mystery, I, as an ancient **Archmage**, must assert that his inclusion in _The Lord of the Rings_ was, unfortunately, a narrative misstep.
 
-### His Powers
+_An unpopular opinion, I know._
 
-Tom demonstrates several remarkable abilities:
+## Introduction
 
-1. **Ring immunity** - The One Ring has no effect on him
-2. Control over Old Man Willow and the Barrow-wights
-3. Command over the natural world
-4. *Ancient knowledge* spanning ages
+Having traversed the corridors of Tolkien's sprawling world, immersed in its lore, I have come to understand the impact of cohesion and momentum in storytelling. Thus, I find myself compelled to examine Tom Bombadil's role and question the necessity of his presence within the epic saga. As we embark on this critical inquiry, let us consider the reasons why Old Tom's playful presence may be seen as a disruptive force.
 
-## Theories About Tom
+## An Intriguing Yet Disjointed Figure
 
-> "Tom Bombadil is the spirit of the (vanishing) Oxford and Berkshire countryside"
-> 
-> — J.R.R. Tolkien (in a letter)
+### A Divergence from Narrative Flow
 
-### The Nature Theory
+Tolkien's epic is known for its meticulous pacing and the gravity of its themes. Enter Tom Bombadil—a character whose frivolity and detachment from worldly events create a jarring contrast within the otherwise cohesive narrative:
 
-Many scholars believe Tom represents:
+1. **An Unnecessary Interlude**: The encounter with Tom, while quaint and endearing, serves as a temporal diversion that detracts from the urgency of the Fellowship's quest.
+2. **An Outlier in Purpose**: His escapades, while rich in mirth, add little to the central narrative, raising questions about their relevance in the grand design of Middle-earth.
 
-- The spirit of nature itself
-- A Valar who chose to remain in Middle-earth
-- An *Ainur* who never entered the world properly
-- Simply an enigma meant to remain unexplained
+## An Enigma that Remains Unresolved
 
-## Tom's Role in the Story
+### A Break from Coherence
 
-While Tom saves the hobbits from:
+In a tale defined by intricate connections and deeply rooted mythology, Bombadil's inexplicable nature poses a challenge to the narrative's internal logic:
 
-1. **Old Man Willow**
-2. The Barrow-wights
-3. Various other perils
+- **A Mystery Without Resolution**: Unlike other enigmatic figures whose backstories enrich the tapestry, Tom remains enigmatic, shrouded in mystery that neither advances the plot nor deepens the lore.
+- **A Departure from Tone**: His presence, filled with lighthearted songs and whimsical antics, contrasts sharply with the solemnity and tension that define the rest of the saga.
 
-The Council of Elrond ultimately decides that Tom cannot be trusted with the Ring - not because he's evil, but because he would likely *forget about it* or treat it as unimportant.
+```
+print("Tom")
+print("Bombadil")
+print("A")
+print("Mystery")
+```
 
-![Tom Bombadil](images/tom.png)
+## A Theme of **Disruption**
 
-## His Songs and Speech
+### An Element of Distraction
 
-Tom speaks in a distinctive rhythm, often in verse:
+Tom Bombadil's inclusion inadvertently shifts focus from the pressing matters of Middle-earth, introducing themes that sit uneasily with the narrative's core:
 
-> "Hey dol! merry dol! ring a dong dillo!
-> Ring a dong! hop along! fal lal the willow!"
+- **A Shift in Focus**: His carefree demeanor and ability to withhold the power of the One Ring, while intriguing, distract from the overarching themes of sacrifice and moral complexity.
+- **A Misstep in Continuity**: His segment, charming as it may be, disrupts the journey's continuous build-up towards the looming confrontation with darkness.
 
-This musical quality to his speech reinforces his connection to the natural world and ancient magic.
+## Conclusion
 
-Tom Bombadil remains one of Tolkien's most beloved mysteries - a character who represents wonder and the unknowable in a world that's otherwise quite thoroughly mapped and explained.
+As we ponder the manifold wonders and intricacies of Tolkien's world, it is evident that Tom Bombadil, while delightfully unique, was a narrative anomaly—a whimsical reflection in the mirror of Middle-earth's grand narrative. While his character captivates with a certain mystique, it answers questions that were never asked, leaving readers with more enigmas than revelations.
 
-*Read more about [Glorfindel](../glorfindel/) and [His Majesty](../majesty/)*
+In conclusion, as one who has explored the mythic past of Middle-earth and sought coherence in its storied legacy, I propose that Tom Bombadil, for all his merriment and enigma, was a divergence from the tale's destined path—a curiosity that, while endearing to some, stands as a reminder that even in the most meticulously crafted worlds, not all paths lead to the fulfillment of the quest.
+
+Thus, let us bid farewell to Old Tom with a final song, recognizing both his charm and the discord his presence sowed. For within the hallowed pages of Tolkien's masterpiece, every beat must resonate with purpose, lest the harmony of the tale be lost to idle whimsy.
