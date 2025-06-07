@@ -4,6 +4,7 @@ from markdown_blocks import (
     markdown_to_blocks,
     block_to_block_type,
     BlockType,
+    extract_title,
 )
 
 
