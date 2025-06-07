@@ -30,7 +30,7 @@ jobs:
 
       - name: Build static site
         run: |
-          python3 src/main.py
+          python3 src/main.py --github
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
