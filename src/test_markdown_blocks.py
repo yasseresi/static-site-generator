@@ -165,5 +165,70 @@ the **same** even with inline stuff
         )
 
 
+class TestExtractTitle(unittest.TestCase):
+    def test_extract_title_simple(self):
+        markdown = "# Hello"
+        title = extract_title(markdown)
+        self.assertEqual(title, "Hello")
+
+    def test_extract_title_with_whitespace(self):
+        markdown = "#   Spaced Title   "
+        title = extract_title(markdown)
+        self.assertEqual(title, "Spaced Title")
+
+    def test_extract_title_multiline(self):
+        markdown = """
+Some text before
+
+# Main Title
+
+Some content after the title
+"""
+        title = extract_title(markdown)
+        self.assertEqual(title, "Main Title")
+
+    def test_extract_title_with_other_headers(self):
+        markdown = """
+## This is h2
+
+# This is h1
+
+### This is h3
+"""
+        title = extract_title(markdown)
+        self.assertEqual(title, "This is h1")
+
+    def test_extract_title_no_h1_raises_exception(self):
+        markdown = """
+## This is h2
+### This is h3
+Some regular text
+"""
+        with self.assertRaises(ValueError) as context:
+            extract_title(markdown)
+        self.assertIn("No h1 header found", str(context.exception))
+
+    def test_extract_title_empty_markdown(self):
+        markdown = ""
+        with self.assertRaises(ValueError):
+            extract_title(markdown)
+
+    def test_extract_title_only_hashtag_no_space(self):
+        markdown = "#NoSpace"
+        with self.assertRaises(ValueError):
+            extract_title(markdown)
+
+    def test_extract_title_complex_content(self):
+        markdown = """
+# Tolkien Fan Club
+
+![JRR Tolkien sitting](/images/tolkien.png)
+
+Here's the deal, **I like Tolkien**.
+"""
+        title = extract_title(markdown)
+        self.assertEqual(title, "Tolkien Fan Club")
+
+
 if __name__ == "__main__":
     unittest.main()
